@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --alive-color: #00ff0a;
+    --dead-color: #ff0057;
+    --unknown-color: #fffd44;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;  
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #cccccc40;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  ::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+  }
+
+li i {
+    position: absolute;
+    inset: 0;
+    border: 2px solid #fff;
+    transition: 0.5s;
+    margin-top:  -30px;
+    margin-bottom: -30px;
+}
+
+li i:nth-child(1) {
+    border-radius: 43% 57% 74% 26% / 44% 30% 70% 56%;
+}
+
+li i:nth-child(2) {
+    border-radius: 23% 77% 31% 69% / 71% 30% 70% 29%;
+}
+
+li i:nth-child(3) {
+    border-radius: 44% 56% 16% 84% / 37% 65% 37% 69%;
+}
+
+.shadow-alive {
+    filter: drop-shadow(0 0 20px var(--alive-color));
+}
+
+.shadow-dead {
+    filter: drop-shadow(0 0 20px var(--dead-color));
+}
+
+.shadow-unknown {
+    filter: drop-shadow(0 0 20px var(--unknown-color));
+}
+
+
+
